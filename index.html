@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Glorytun by angt</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Glorytun</h1>
+        <p>Through the holes !!</p>
+
+        <p class="view"><a href="https://github.com/angt/glorytun">View the Project on GitHub <small>angt/glorytun</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/angt/glorytun/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/angt/glorytun/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/angt/glorytun">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <p><strong>Work In Progress:</strong> Do not touch!</p>
+
+<p>glorytun depends on <a href="https://github.com/jedisct1/libsodium">libsodium</a> version &gt;= 1.0.4
+and needs an AES-NI capable CPU.</p>
+
+<p>To build and install the latest version:</p>
+
+<pre><code>$ git clone https://github.com/angt/glorytun
+$ cd glorytun
+$ ./autogen.sh
+$ ./configure
+$ make
+# make install
+</code></pre>
+
+<p>To create and use a new secret key:</p>
+
+<pre><code>$ dd if=/dev/urandom of=glorytun.key bs=32 count=1
+# glorytun keyfile glorytun.key [...]
+</code></pre>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/angt">angt</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
